@@ -166,7 +166,7 @@ export default function PortfolioOnePager() {
 
         {/* FOOTER */}
         <footer className="py-10 text-center text-sm text-white/70">
-          © {new Date().getFullYear()}Dines Nimalthas
+          © {new Date().getFullYear()}DinesNimalthas
         </footer>
       </div>
     </div>
