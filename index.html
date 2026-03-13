@@ -1,13 +1,1013 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dines Nimalthas - M365 Consultant & Cloud Application Developer</title>
+    <meta name="description" content="Portfolio von Dines Nimalthas - M365 Consultant, Cloud Application Developer und Collaboration Expert bei Joker IT AG">
+    <meta name="keywords" content="Dines Nimalthas, M365 Consultant, Microsoft 365, SharePoint, Teams, Cloud Application Developer, Collaboration Expert">
+    <meta name="author" content="Dines Nimalthas">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dines Nimalthas - Portfolio">
+    <meta property="og:description" content="Collaboration Expert & Cloud Application Developer">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <span class="loader-text">DN</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">DN</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Über mich</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Erfahrung</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projekte</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="grid-pattern"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting animate-fadeIn">
+                        <span class="greeting-wave">👋</span>
+                        <span class="greeting-text">Hallo, ich bin</span>
+                    </div>
+                    <h1 class="hero-name animate-slideUp">
+                        <span class="name-first">Dines</span>
+                        <span class="name-last">Nimalthas</span>
+                    </h1>
+                    <div class="hero-titles animate-slideUp delay-1">
+                        <div class="title-wrapper">
+                            <span class="title-static">Ich bin </span>
+                            <span class="title-dynamic">
+                                <span class="title-text"></span>
+                                <span class="title-cursor">|</span>
+                            </span>
+                        </div>
+                    </div>
+                    <p class="hero-description animate-slideUp delay-2">
+                        Informatiker EFZ & B.Sc. Wirtschaftsinformatik Student an der Hochschule Luzern.
+                        Als <strong>M365 Consultant</strong> bei <strong>Joker IT AG</strong> spezialisiert auf 
+                        SharePoint, Microsoft Teams und Cloud-Lösungen.
+                    </p>
+                    <div class="hero-cta animate-slideUp delay-3">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Let's Talk</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span>Meine Projekte</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                    <div class="hero-social animate-slideUp delay-4">
+                        <a href="https://linkedin.com/in/dines-nimalthas" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/dinesnimalthas" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:dinesnimal@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual animate-scaleIn">
+                    <div class="profile-container">
+                        <div class="profile-ring"></div>
+                        <div class="profile-ring-2"></div>
+                        <img src="assets/images/profilbild.png" alt="Dines Nimalthas" class="profile-image">
+                        <div class="profile-dots">
+                            <span class="dot dot-1"></span>
+                            <span class="dot dot-2"></span>
+                            <span class="dot dot-3"></span>
+                        </div>
+                    </div>
+                    <div class="floating-cards">
+                        <div class="float-card card-1">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Microsoft 365</span>
+                        </div>
+                        <div class="float-card card-2">
+                            <i class="fas fa-cloud"></i>
+                            <span>Azure Cloud</span>
+                        </div>
+                        <div class="float-card card-3">
+                            <i class="fas fa-users"></i>
+                            <span>SharePoint</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Über mich</span>
+                <h2 class="section-title">Wer ich bin</h2>
+                <p class="section-subtitle">Leidenschaft für Innovation und digitale Transformation</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image reveal-left">
+                    <div class="image-wrapper">
+                        <img src="assets/images/profilbild.png" alt="Dines Nimalthas">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">2</span>
+                        <span class="exp-text">Jahre<br>Erfahrung</span>
+                    </div>
+                </div>
+                
+                <div class="about-text reveal-right">
+                    <div class="about-intro">
+                        <h3>M365 Consultant & Cloud Application Developer</h3>
+                        <p>
+                            Als <strong>Cloud Application Developer</strong> und <strong>Collaboration Expert</strong> 
+                            bei der <strong>Joker IT AG</strong> berate und unterstütze ich Unternehmen bei der 
+                            Implementierung von Microsoft 365-Lösungen. Mein Fokus liegt auf SharePoint, 
+                            Microsoft Teams und massgeschneiderten Cloud-Anwendungen.
+                        </p>
+                        <p>
+                            Aktuell studiere ich <strong>B.Sc. Wirtschaftsinformatik</strong> (Business Analysis) 
+                            an der Hochschule Luzern. Meine Informatiker-Ausbildung kombiniert mit dem Studium 
+                            ermöglicht mir, technische Lösungen mit betriebswirtschaftlichem Verständnis zu entwickeln.
+                        </p>
+                    </div>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>M365 Consultant</h4>
+                                <p>Beratung und Implementierung von Microsoft 365-Lösungen</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Wirtschaftsinformatik</h4>
+                                <p>B.Sc. Student an der Hochschule Luzern</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>SharePoint & Teams</h4>
+                                <p>Spezialisiert auf Collaboration-Plattformen</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-label">Projekte</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="2">0</span>
+                            <span class="stat-label">Jahre Erfahrung</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-label">Technologien</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="100">0</span>
+                            <span class="stat-label">% Einsatz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Mein Weg</span>
+                <h2 class="section-title">Erfahrung & Bildung</h2>
+                <p class="section-subtitle">Von der Ausbildung zum M365 Consultant</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <!-- Current Work -->
+                <div class="timeline-item reveal" data-side="left">
+                    <div class="timeline-marker current">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Aug 2025 - Heute</span>
+                            <span class="timeline-badge current">Aktuell</span>
+                        </div>
+                        <h3 class="timeline-title">Cloud Application Developer & M365 Consultant</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Joker IT AG, Kriens
+                        </h4>
+                        <p class="timeline-description">
+                            Beratung und Entwicklung von Microsoft 365-Lösungen für Kunden. 
+                            Spezialisierung auf <strong>SharePoint</strong> und <strong>Microsoft Teams</strong>. 
+                            Administration, Customizing und Entwicklung von Cloud-Anwendungen.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Microsoft 365</span>
+                            <span class="tag">SharePoint</span>
+                            <span class="tag">Teams</span>
+                            <span class="tag">Power Platform</span>
+                            <span class="tag">Azure</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Current Education -->
+                <div class="timeline-item reveal" data-side="right">
+                    <div class="timeline-marker education">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Sep 2025 - 2028</span>
+                            <span class="timeline-badge education">Studium</span>
+                        </div>
+                        <h3 class="timeline-title">B.Sc. Wirtschaftsinformatik</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-university"></i>
+                            Hochschule Luzern (HSLU)
+                        </h4>
+                        <p class="timeline-description">
+                            Fokus auf Business Analysis – Verknüpfung von IT-Kenntnissen mit 
+                            betriebswirtschaftlichen Aspekten für ganzheitliche Lösungsansätze und 
+                            datengetriebene Entscheidungsfindung.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Business Analysis</span>
+                            <span class="tag">IT Management</span>
+                            <span class="tag">Digital Transformation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Apprenticeship Completion -->
+                <div class="timeline-item reveal" data-side="left">
+                    <div class="timeline-marker work">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Aug 2021 - Aug 2025</span>
+                            <span class="timeline-badge">Abgeschlossen</span>
+                        </div>
+                        <h3 class="timeline-title">Informatiker EFZ – Applikationsentwicklung</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Joker IT AG, Kriens
+                        </h4>
+                        <p class="timeline-description">
+                            Erfolgreich abgeschlossene Ausbildung zum Informatiker EFZ mit Fachrichtung 
+                            Applikationsentwicklung. Vertiefung in Cloud-Technologien, Microsoft 365 
+                            Entwicklung und agile Methoden.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">C# / .NET</span>
+                            <span class="tag">Cloud Development</span>
+                            <span class="tag">Full-Stack</span>
+                            <span class="tag">Agile</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- BM -->
+                <div class="timeline-item reveal" data-side="right">
+                    <div class="timeline-marker education">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Aug 2021 - Jul 2025</span>
+                            <span class="timeline-badge education">Bildung</span>
+                        </div>
+                        <h3 class="timeline-title">Berufsmaturität Wirtschaft & Dienstleistung</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-university"></i>
+                            FMWZ Luzern & ICT-Berufsbildung Zentralschweiz
+                        </h4>
+                        <p class="timeline-description">
+                            Duale Ausbildung: Informatiker EFZ parallel zur Berufsmaturität Wirtschaft 
+                            und Dienstleistung als innovative Kombination für das anschliessende 
+                            Fachhochschulstudium.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Wirtschaft</span>
+                            <span class="tag">BWL</span>
+                            <span class="tag">Dualsystem</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Skills & Technologien</h2>
+                <p class="section-subtitle">Moderne Technologien für zukunftsfähige Lösungen</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Cloud & Platforms -->
+                <div class="skill-category reveal">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Microsoft 365</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon sharepoint">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">SharePoint Online</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon teams">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">Microsoft Teams</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon m365">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">M365 Administration</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon azure">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">Microsoft Azure</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Development -->
+                <div class="skill-category reveal">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon csharp">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">C# / .NET</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon js">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">JavaScript / TypeScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon react">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">React / SPFx</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon python">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DevOps & Tools -->
+                <div class="skill-category reveal">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>DevOps & Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon devops">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">Azure DevOps</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon git">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">Git / GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon docker">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">Docker / Kubernetes</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon powerautomate">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">Power Automate</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Languages -->
+                <div class="skill-category reveal">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Sprachen</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon german">
+                                <span class="flag-emoji">🇩🇪</span>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">Deutsch</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="100"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">C2</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon tamil">
+                                <span class="flag-emoji">🇱🇰</span>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">Tamil</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="100"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">C2</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon english">
+                                <span class="flag-emoji">🇬🇧</span>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">Englisch</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">C1</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon french">
+                                <span class="flag-emoji">🇫🇷</span>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-name">Französisch</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <span class="skill-percent">B1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tech Stack Icons -->
+            <div class="tech-stack reveal">
+                <h4>Tech Stack</h4>
+                <div class="tech-icons">
+                    <div class="tech-icon" data-tooltip="Azure">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="C# / .NET">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="JavaScript">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="React">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="Node.js">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="Python">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="Docker">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="Git">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="HTML5">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kompetenzen</span>
+                <h2 class="section-title">Was ich mache</h2>
+                <p class="section-subtitle">Meine Schwerpunkte als M365 Consultant</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- SharePoint Solutions -->
+                <div class="project-card featured reveal">
+                    <div class="project-preview">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <span class="project-btn" aria-label="SharePoint">
+                                    <i class="fab fa-microsoft"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="project-badge featured">Spezialisierung</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>SharePoint Lösungen</h3>
+                            <p class="project-subtitle">Intranet & Collaboration</p>
+                        </div>
+                        <p class="project-description">
+                            Konzeption und Implementierung von SharePoint-Lösungen: 
+                            Intranet-Portale, Dokumentenmanagement, Custom Sites und 
+                            massgeschneiderte Workflows für Unternehmen verschiedener Grössen.
+                        </p>
+                        <div class="project-tech">
+                            <span>SharePoint Online</span>
+                            <span>SPFx</span>
+                            <span>Power Automate</span>
+                            <span>PnP</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-sitemap"></i>
+                                <span>Intranet Design</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-file-alt"></i>
+                                <span>DMS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Microsoft Teams -->
+                <div class="project-card reveal">
+                    <div class="project-preview">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <span class="project-btn" aria-label="Teams">
+                                    <i class="fab fa-microsoft"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Microsoft Teams</h3>
+                            <p class="project-subtitle">Collaboration & Governance</p>
+                        </div>
+                        <p class="project-description">
+                            Teams-Governance, Strukturierung von Team-Landschaften, 
+                            Custom Apps und Tabs, sowie Integration von Drittanbieter-Tools 
+                            für effiziente Zusammenarbeit.
+                        </p>
+                        <div class="project-tech">
+                            <span>Teams Admin</span>
+                            <span>Teams Apps</span>
+                            <span>Governance</span>
+                            <span>Graph API</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Governance</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-plug"></i>
+                                <span>Integrationen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- M365 Administration -->
+                <div class="project-card reveal">
+                    <div class="project-preview">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <span class="project-btn" aria-label="Admin">
+                                    <i class="fas fa-tools"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>M365 Administration</h3>
+                            <p class="project-subtitle">Tenant Management</p>
+                        </div>
+                        <p class="project-description">
+                            Administration von Microsoft 365 Tenants: Benutzer- und 
+                            Lizenzverwaltung, Security & Compliance, Conditional Access 
+                            und Konfiguration der gesamten M365-Umgebung.
+                        </p>
+                        <div class="project-tech">
+                            <span>M365 Admin</span>
+                            <span>Azure AD</span>
+                            <span>Security</span>
+                            <span>PowerShell</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-user-shield"></i>
+                                <span>Security</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-terminal"></i>
+                                <span>PowerShell</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Power Platform -->
+                <div class="project-card reveal">
+                    <div class="project-preview">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <span class="project-btn" aria-label="Power Platform">
+                                    <i class="fas fa-bolt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Power Platform</h3>
+                            <p class="project-subtitle">Automatisierung & Apps</p>
+                        </div>
+                        <p class="project-description">
+                            Entwicklung von Business-Anwendungen mit Power Apps sowie 
+                            Prozessautomatisierung mit Power Automate. Von einfachen 
+                            Flows bis zu komplexen Geschäftsprozessen.
+                        </p>
+                        <div class="project-tech">
+                            <span>Power Apps</span>
+                            <span>Power Automate</span>
+                            <span>Power BI</span>
+                            <span>Dataverse</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Custom Apps</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-sync"></i>
+                                <span>Workflows</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta reveal">
+                <p>Mehr über mich auf LinkedIn</p>
+                <a href="https://linkedin.com/in/dines-nimalthas" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn Profil</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kontakt</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Interesse an einer Zusammenarbeit? Ich freue mich auf deine Nachricht!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <div class="contact-intro">
+                        <h3>Lass uns sprechen</h3>
+                        <p>
+                            Ob Projektidee, Jobangebot oder einfach ein Austausch über Technologie – 
+                            ich freue mich immer über neue Kontakte und spannende Gespräche.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">E-Mail</span>
+                                <a href="mailto:dinesnimal@gmail.com">dinesnimal@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Telefon</span>
+                                <a href="tel:+41768051026">+41 76 805 10 26</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Standort</span>
+                                <span>Kriens, Luzern, Schweiz</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Arbeitgeber</span>
+                                <span>Joker IT AG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Social Media</h4>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/dines-nimalthas" target="_blank" class="social-btn linkedin" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/dinesnimalthas" target="_blank" class="social-btn github" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com/dinesnimalthas" target="_blank" class="social-btn twitter" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper reveal-right">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Dein Name">
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" required placeholder="deine@email.ch">
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Betreff</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Worum geht's?">
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Deine Nachricht..."></textarea>
+                            <span class="form-line"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Nachricht senden</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">DN</span>
+                    <p>Collaboration Expert & Cloud Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">Über mich</a>
+                    <a href="#experience">Erfahrung</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projekte</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/dines-nimalthas" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/dinesnimalthas" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:dinesnimal@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dines Nimalthas. Alle Rechte vorbehalten.</p>
+                <p class="footer-tech">Entwickelt mit <i class="fas fa-heart"></i> und modernen Web-Technologien</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
 </html>

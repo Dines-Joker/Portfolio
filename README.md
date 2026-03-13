@@ -1,54 +1,90 @@
-# React + TypeScript + Vite
+# Portfolio - Dines Nimalthas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modernes, responsives Portfolio für Dines Nimalthas - M365 Consultant & Cloud Application Developer bei Joker IT AG.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modernes Design mit Glasmorphism-Effekten
+- Vollständig responsiv für alle Geräte
+- Interaktive Animationen und Scroll-Effekte
+- SEO-freundlich mit semantischem HTML
 
-## Expanding the ESLint configuration
+## Technologien
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **HTML5** - Semantische Struktur
+- **CSS3** - Moderne Styling mit Custom Properties
+- **JavaScript ES6+** - Interaktive Funktionalität
+- **Font Awesome 6.5** - Icons
+- **Google Fonts** - Typografie (Inter, JetBrains Mono)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Projektstruktur
+
+```
+Portfolio/
+├── index.html                  # Haupt-HTML-Datei
+├── staticwebapp.config.json    # Azure SWA Konfiguration
+├── README.md                   # Diese Datei
+└── assets/
+    ├── css/
+    │   └── styles.css          # CSS-Styling
+    ├── js/
+    │   └── main.js             # JavaScript-Funktionalität
+    └── images/
+        └── profilbild.png      # Profilbild
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Lokale Entwicklung
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Einfach `index.html` im Browser öffnen oder einen lokalen Server starten:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+# Mit Python
+python -m http.server 8080
+
+# Mit Node.js (http-server)
+npx http-server -p 8080
 ```
+
+## Deployment
+
+### Azure Static Web Apps
+
+```bash
+# SWA CLI installieren
+npm install -g @azure/static-web-apps-cli
+
+# Lokal testen
+swa start
+
+# Deployen
+swa deploy --app-location "."
+```
+
+### Andere Hosting-Optionen
+
+Das Portfolio kann auf jedem statischen Webhosting deployed werden:
+- GitHub Pages
+- Netlify
+- Vercel
+- Azure Blob Storage (Static Website)
+
+## Wartung
+
+### Dateien bearbeiten
+
+- **Inhalte ändern:** `index.html`
+- **Styling anpassen:** `assets/css/styles.css`
+- **Interaktionen ändern:** `assets/js/main.js`
+- **Bilder austauschen:** `assets/images/`
+
+### Skills aktualisieren
+
+Skills befinden sich in `index.html` im Abschnitt `<section id="skills">`. Jeder Skill hat einen `data-progress` Wert (0-100).
+
+### Erfahrung hinzufügen
+
+Timeline-Einträge befinden sich im Abschnitt `<section id="experience">`. Neue Einträge als `<div class="timeline-item">` hinzufügen.
+
+---
+
+© 2024 Dines Nimalthas
